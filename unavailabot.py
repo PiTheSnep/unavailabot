@@ -21,9 +21,7 @@ bot = commands.Bot(
 @bot.event
 async def on_ready():
     print(
-        f'\n\nLogged in: {bot.user.name} \
-          ID: {bot.user.id} \
-          \nVersion: {discord.__version__}\n'
+        f'\n\nLogged in: {bot.user.name} ID: {bot.user.id}\nVersion: {discord.__version__}\n'
     )
 
     await bot.change_presence(
